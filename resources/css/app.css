@@ -42,7 +42,7 @@ header {
     display: flex;
     justify-content: space-evenly;
     transition: 0.7s;
-    z-index: 100;
+    z-index: 1;
 }
 
 header.abajo {
@@ -77,20 +77,33 @@ header ul li {
 /* FIN HEADER */
 
 /* SECCION INICIO */
-.section_inicio {
-    position: relative;
-    height: 570px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    border: 1px solid #ddd;
-    background-color: white;
-    margin-top: 12rem;
-    margin-bottom: 1.5rem;
-}
 
 .cabecera {
     color: #4144ad;
     font-weight: bold;
     padding: 240px 0 75px 0;
+}
+
+.section_inicio {
+    background-image: url('/public/images/fondoAbogado.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    height: 90vh;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ddd;
+    margin-top: 11rem;
+    margin-bottom: 1.5rem;
+}
+
+.transparencia-inicio {
+    background-color: rgba(255, 255, 255, 0.5);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    height: 90vh;
 }
 
 .section_inicio h1 {
@@ -325,12 +338,46 @@ footer a {
         margin-top: 1rem;
     }
 
-    .section_inicio {
-        height: auto;
+    .container-fluid .section_inicio{
+        width: auto;/* ajusta el ancho según tus necesidades */
+        height: 240px;/* ajusta la altura según tus necesidades */
+    }
+
+    .container-fluid .section_inicio .transparencia-inicio{
+        width: auto;/* ajusta el ancho según tus necesidades */
+        height: 300px;/* ajusta la altura según tus necesidades */
+    }
+
+    .section_inicio{
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 10% 34%;
+    }
+
+    .cabecera {
+        padding: 60px;
     }
 
     .cabecera h1 {
-        font-size: 40px;
+        font-size: 30px;
+    }
+
+    .cabecera p {
+        font-size: 25px;
+    }
+
+    .what{
+        max-width: auto;
+        max-height: 10px;
+    }
+
+    .what h5{
+        font-size: 20px;
+    }
+
+    .what-ico a i{
+        padding-top: 15px;
+        font-size: 50px;
     }
 
     .section_two {

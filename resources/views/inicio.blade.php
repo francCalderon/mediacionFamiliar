@@ -8,7 +8,7 @@
     <title>Mediación Familiar Privada</title>
 
     <!-- Links -->
-    <link rel="stylesheet" href="{{ asset('/build/assets/app-e3a94ada.css') }}" />
+    <link rel="stylesheet" href="{{ asset('/build/assets/app-5f58304e.css') }}" />
     <link rel="stylesheet" href="{{ asset('/build/assets/app-bd4f8341.css') }}" />
 
     <!-- Scripts -->
@@ -54,11 +54,11 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-lg bg-white">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <div class="px-5 mx-5">
                     <a class="navbar-brand link-body-emphasi" href="#seccion_inicio">
-                        <img src="{{ asset('images/logoOf.jpg') }}" class="logo">
+                        <img src="{{ asset('images/logoOf-removebg.png') }}" class="logo">
                         <span>Mediación Familiar</span>
                     </a>
                 </div>
@@ -82,39 +82,29 @@
     </header>
 
     <!-- Seccion Inicio -->
-    <div class="container section_inicio">
-        <section id="seccion_inicio">
-            <div class="row justify-content-center align-items-center text-center">
-                <div class="col-md-12 cabecera">
-                    <h1>"ABOGADO MEDIADOR"</h1>
-                    <p>Miguel Andrés Arriagada Cuadro</p>
-                </div>
+    <div class="container-fluid">
+        <div class="section_inicio">
+            <div class="transparencia-inicio">
+                <section id="seccion_inicio">
+                    <div class="row justify-content-center align-items-center text-center">
+                        <div class="col-md-12 cabecera">
+                            <h1>"ABOGADO MEDIADOR"</h1>
+                            <p>Miguel Andrés Arriagada Cuadro</p>
+                        </div>
+                    </div>
+                </section>
             </div>
-            <div class="row row-cols-3 justify-content-center text-center p-2 scroll-content fadeTop">
-                <div class="col-md-1"><img src="{{ asset('images/logos/ejercito.png') }}" alt=""></div>
-                <div class="col-md-1"><img src="{{ asset('images/logos/armada.png') }}" alt=""></div>
-                <div class="col-md-1"><img src="{{ asset('images/logos/aerea.png') }}" alt=""></div>
-                <div class="col-md-1"><img src="{{ asset('images/logos/carabineros.png') }}" alt=""></div>
-                <div class="col-md-1"><img src="{{ asset('images/logos/pdi.png') }}" alt=""></div>
-                <div class="col-md-1"><img src="{{ asset('images/logos/gendarmeria.png') }}" alt=""></div>
-            </div>
-            <div class="row justify-content-center align-items-center text-center scroll-content fadeTop">
-                <div class="col-md-12">
-                    <span>*Descuento 15% a los solicitantes que pertenezcan a las Fuerzas Armadas y de Orden y
-                        Seguridad. (Acreditado)</span>
-                </div>
-            </div>
-        </section>
+        </div>
     </div>
 
     <!-- Contacto whatsapp -->
     <div class="container">
         <section>
             <div class="row justify-content-center align-items-center text-center whapp_inter scroll-content fadeTop">
-                <div class="col-md-6">
+                <div class="col-md-6 what">
                     <h5>Contáctanos vía Whatsapp</h5>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 what-ico">
                     <a class="link-body-emphasis"
                         href="https://api.whatsapp.com/send?phone=56930512849&text=Hola,%20solicito%20informaci%C3%B3n%20para%20una%20cotizaci%C3%B3n"
                         target="_blank" rel="noopener noreferrer">
@@ -241,7 +231,7 @@
                     <div class="card border-light col-md-10">
                         <div class="card-header border">
                             <h3>Mediación con o sin acuerdo en la sesión familiar</h3>
-                            <h2>$60.000</h2>
+                            <h2>$100.000</h2>
                         </div>
                         <div class="card-body">
                             <div class="card-text">
