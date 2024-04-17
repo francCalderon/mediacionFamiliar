@@ -8,7 +8,7 @@
     <title>Mediación Familiar Privada</title>
 
     <!-- Links -->
-    <link rel="stylesheet" href="{{ asset('/build/assets/app-5f58304e.css') }}" />
+    <link rel="stylesheet" href="{{ asset('/build/assets/app-927a87df.css') }}" />
     <link rel="stylesheet" href="{{ asset('/build/assets/app-bd4f8341.css') }}" />
 
     <!-- Scripts -->
@@ -43,6 +43,7 @@
                 });
             });
         });
+
     </script>
 
     <!-- Vite -->
@@ -56,10 +57,10 @@
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <div class="px-5 mx-5">
+                <div class="p-3 p-auto">
                     <a class="navbar-brand link-body-emphasi" href="#seccion_inicio">
-                        <img src="{{ asset('images/logoOf-removebg.png') }}" class="logo">
-                        <span>Mediación Familiar</span>
+                        <img src="{{ asset('images/logo_v3.png') }}" class="logo">
+                        <span>Abogado Mediador</span>
                     </a>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -71,10 +72,9 @@
                     <ul class="navbar-nav navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item"><a href="#seccion_inicio" class="nav-link" aria-current="page">Inicio</a>
                         </li>
-                        <li class="nav-item"><a href="#seccion_mediacion" class="nav-link">Mediaci&oacuten</a></li>
-                        <li class="nav-item"><a href="#seccion_valores" class="nav-link">Valores</a></li>
+                        <li class="nav-item"><a href="#servicio_abogado" class="nav-link">Servicios Abogado</a></li>
+                        <li class="nav-item"><a href="#servicio_mediacion" class="nav-link">Servicios Mediación</a></li>
                         <li class="nav-item"><a href="#seccion_contacto" class="nav-link">Contacto</a></li>
-                        <li class="nav-item"><a href="#seccion_servicios" class="nav-link">Otros Servicios</a></li>
                     </ul>
                 </div>
             </div>
@@ -115,9 +115,91 @@
         </section>
     </div>
 
-    <!-- Seccion Mediación -->
-    <div class="container section_two scroll-content fadeTop mb-5">
-        <section id="seccion_mediacion">
+    <!-- Seccion Servicios Abogado -->
+    <section id="servicio_abogado">
+        <div class="container section_four scroll-content fadeTop mb-5">
+            <div class="row justify-content-center align-items-center text-center mb-3">
+                <h2>Servicios Abogado</h2>
+            </div>
+            {{-- 1 --}}
+            <div class="row justify-content-start align-items-center">
+                <div class="col-md-8 text-start">
+                    <h5 class="m-0">Incluye todos los siguientes servicios con sus valores:</h5>
+                </div>
+                <div class="col-md-2 text-start">
+                    <a class="collapsed" data-bs-toggle="collapse" href="#collapseServicios" role="button"
+                        aria-expanded="false" aria-controls="collapseServicios">
+                        <i class="fa-solid fa-chevron-down fa-2x custom-icon"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="row text-start">
+                <div class="multi-collapse collapse" id="collapseServicios" style="">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">- Autorización para salir del país: $350.000 pesos.</li>
+                        <li class="list-group-item">- Demanda de divorcio de común acuerdo: $400.000 pesos.</li>
+                        <li class="list-group-item">- Demanda de declaración de bien familiar: $500.000 pesos.</li>
+                        <li class="list-group-item">- Demanda de violencia intrafamiliar: $500.000 pesos.</li>
+                        <li class="list-group-item">- Demanda de divorcio unilateral: $550.000 pesos.</li>
+                        <li class="list-group-item">- Demanda de pensión de alimentos: $600.000 pesos.</li>
+                        <li class="list-group-item">- Demanda de cese de pensión de alimentos: $600.000 pesos.</li>
+                        <li class="list-group-item">- Demanda de aumento de pensión de alimentos: $600.000 pesos.</li>
+                        <li class="list-group-item">- Demanda de relación directa y regular: $600.000 pesos.</li>
+                        <li class="list-group-item">- Pago de deudas de pensión de alimentos con los fondos de AFP: 20%
+                            total de la deuda.</li>
+                        <li class="list-group-item">- Posesión efectiva intestada o sin testamento: $250.000.</li>
+                        <li class="list-group-item">- Inscripción de propiedades en el Conservador de Bienes Raíces:
+                            $200.000.</li>
+                        <li class="list-group-item">- Estudio de títulos: $300.000.</li>
+                        <li class="list-group-item">- Servicio de corretaje de propiedades respecto a la gestión de
+                            arriendos y compraventas de inmuebles.</li>
+                        <li class="list-group-item">- Confección de contratos de arriendo, compraventa, promesa de
+                            compraventa: $100.000.</li>
+                        <li class="list-group-item">- Demanda por despido injustificado en derecho laboral: Pago
+                            conforme a lo ganado en juicio.</li>
+                    </ul>
+                </div>
+            </div>
+            {{-- 2 --}}
+            <div class="row justify-content-start align-items-center">
+                <div class="col-md-8 text-start">
+                    <h5 class="m-0">Orientaciones jurídicas $ 30.000 pesos por una hora, sobre las siguientes
+                        materias: </h5>
+                </div>
+                <div class="col-md-2 text-start">
+                    <a class="collapsed" data-bs-toggle="collapse" href="#collapseOrientaciones" role="button"
+                        aria-expanded="false" aria-controls="collapseOrientaciones">
+                        <i class="fa-solid fa-chevron-down fa-2x custom-icon"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="multi-collapse collapse text-start" id="collapseOrientaciones">
+                    <ol class="list-group list-group-numbered list-group-flush">
+                        <li class="list-group-item">Mediación Familiar.</li>
+                        <li class="list-group-item">Derecho sobre el pago de pensión de alimentos.</li>
+                        <li class="list-group-item">Derecho de Relación Directa y Regular con los hijos, hijas o
+                            adolescentes.</li>
+                        <li class="list-group-item">Posesiones efectivas (con o sin testamento).</li>
+                        <li class="list-group-item">Derecho de herencias.</li>
+                        <li class="list-group-item">Derecho laboral.</li>
+                    </ol>
+                    <div class="col-md-12 p-3">
+                        <p>“Todas las orientaciones jurídicas se realizarán por un Abogado habilitado para el
+                            ejercicio de la profesión, con una duración de una hora aproximadamente, que se llevarán
+                            a cabo, mediante videoconferencia y tendrán un valor de 30. 0000 pesos por consulta”.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Seccion Servicio Mediación -->
+    <section id="servicio_mediacion">
+        <div class="container section_two scroll-content fadeTop mb-5">
+
             <div class="row justify-content-center align-items-center text-center">
                 <h2>Materias que son objeto de una Mediación Familiar</h2>
                 <div class="row justify-content-center align-items-center py-5">
@@ -219,13 +301,67 @@
                         personal de los hijos (antiguamente llamada “tuición”).</p>
                 </div>
             </div>
-        </section>
-    </div>
 
-    <!-- Seccion Valores -->
+            <!-- Valores -->
+            <div class="row justify-content-center align-items-center text-center">
+                <h2 class="p-4">Valores año 2024</h2>
+                <div class="row justify-content-center align-items-md-center text-center">
+                    <div class="card border-light col-md-10">
+                        <div class="card-header border">
+                            <h3>Mediación con o sin acuerdo en la sesión familiar</h3>
+                            <h2>$100.000</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text">
+                                <h5>Incluyen las tres materias mediables: Pensión de alimentos, Relación Directa y
+                                    Regular y Cuidado Personal de los niños, niñas o adolescentes.</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center text-center">
+                    <h2>Territorio Jurisdiccional</h2>
+                    <div class="col-md-4 p-3">
+                        <h5>El Bosque / La Cisterna / La Granja / La Pintana / Lo Espejo / Pedro Aguirre Cerda / San
+                            Joaquín / San Miguel / San Ramón</h5>
+                    </div>
+                    <div class="col-md-4 p-3">
+                        <h5>Santiago / Cerrillos / Conchalí / Estación Central / Huechuraba / Independencia / La Florida
+                            / La Reina / Las Condes / Lo Barnechea / Macul / Ñuñoa / Peñalolen / Providencia / Quilicura
+                            / Recoleta / Renca / Vitacura</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <a class="collapsed" data-bs-toggle="collapse" href="#collapseImportante" role="button"
+                            aria-expanded="false" aria-controls="collapseImportante">
+                            <i class="fa-solid fa-circle-exclamation fa-5x p-1 custom-icon-arrow"></i>
+                        </a>
+                        <h4>IMPORTANTE</h4>
+                    </div>
+                    <div class="multi-collapse collapse" id="collapseImportante" style="">
+                        <p>“No se agendarán horas sin previo abono de la sesión base”<br>
+                            “No se arriesgue y llegue a un buen acuerdo, para no tener problemas judiciales a
+                            futuro”</p>
+                        <p>*Algunos mediadores familiares que se encuentran en el mercado, "NO SON ABOGADOS”. En nuestro
+                            centro de mediación familiar privado, el servicio será realizado por
+                            un abogado mediador, quien se encuentra en pleno conocimiento de las reformas y leyes
+                            vigentes en materia de Familia</p>
+                        <p>*Antes de agendar hora con el abogado mediador, deben ser abonados los $70.000 pesos que
+                            corresponden a la sesión base (sesión sin acuerdo), si durante la sesión se llega a un
+                            acuerdo, se deberá abonar los $30.000 pesos faltantes y posteriormente, se redactará el acta
+                            de mediación y se enviará al tribunal competente</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    {{-- <!-- Seccion Valores -->
     <div class="container section_five scroll-content fadeTop mb-5">
         <section id="seccion_valores">
-            <div class="row  justify-content-center align-items-center text-center">
+            <div class="row justify-content-center align-items-center text-center">
                 <h2>Valores año 2023</h2>
                 <div class="row justify-content-center align-items-md-center text-center">
                     <div class="card border-light col-md-10">
@@ -277,80 +413,12 @@
                 </div>
             </div>
         </section>
-    </div>
-
-    <!-- Seccion Otors Servicios -->
-    <div class="container section_four scroll-content fadeTop mb-5">
-        <section id="seccion_servicios">
-            <div class="row justify-content-center align-items-center text-center mb-3">
-                <h2>Otros Servicios Jurídicos</h2>
-            </div>
-            {{-- Letra a --}}
-            <div class="row justify-content-start align-items-center">
-                <div class="col-md-8 text-start">
-                    <h5 class="m-0">a. Orientaciones jurídicas $ 30.000 pesos por una hora, sobre las siguientes
-                        materias: </h5>
-                </div>
-                <div class="col-md-2 text-start">
-                    <a class="collapsed" data-bs-toggle="collapse" href="#collapseOrientaciones" role="button"
-                        aria-expanded="false" aria-controls="collapseOrientaciones">
-                        <i class="fa-solid fa-chevron-down fa-2x custom-icon"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="multi-collapse collapse text-start" id="collapseOrientaciones">
-                    <ol class="list-group list-group-numbered list-group-flush">
-                        <li class="list-group-item">Mediación Familiar.</li>
-                        <li class="list-group-item">Derecho sobre el pago de pensión de alimentos.</li>
-                        <li class="list-group-item">Derecho de Relación Directa y Regular con los hijos, hijas o
-                            adolescentes.</li>
-                        <li class="list-group-item">Posesiones efectivas (con o sin testamento).</li>
-                        <li class="list-group-item">Derecho de herencias.</li>
-                        <li class="list-group-item">Derecho laboral.</li>
-                    </ol>
-                    <div class="col-md-12 p-3">
-                        <p>“Todas las orientaciones jurídicas se realizarán por un Abogado habilitado para el
-                            ejercicio de la profesión, con una duración de una hora aproximadamente, que se llevarán
-                            a cabo, mediante videoconferencia y tendrán un valor de 30. 0000 pesos por consulta”.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            {{-- Letra b --}}
-            <div class="row justify-content-start align-items-center">
-                <div class="col-md-8 text-start">
-                    <h5 class="m-0">b. Servicios Jurídicos del Abogado Miguel Arriagada Cuadro:</h5>
-                </div>
-                <div class="col-md-2 text-start">
-                    <a class="collapsed" data-bs-toggle="collapse" href="#collapseServicios" role="button"
-                        aria-expanded="false" aria-controls="collapseServicios">
-                        <i class="fa-solid fa-chevron-down fa-2x custom-icon"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="row text-start">
-                <div class="multi-collapse collapse" id="collapseServicios" style="">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">- Autorización para salir del país: $350.000 pesos.</li>
-                        <li class="list-group-item">- Demanda de divorcio de común acuerdo: $400.000 pesos.</li>
-                        <li class="list-group-item">- Demanda de declaración de bien familiar: $500.000 pesos.</li>
-                        <li class="list-group-item">- Demanda de violencia intrafamiliar: $500.000 pesos.</li>
-                        <li class="list-group-item">- Demanda de divorcio unilateral: $550.000 pesos.</li>
-                        <li class="list-group-item">- Demanda de pensión de alimentos: $600.000 pesos.</li>
-                        <li class="list-group-item">- Demanda de cese de pensión de alimentos: $600.000 pesos.</li>
-                        <li class="list-group-item">- Demanda de aumento de pensión de alimentos: $600.000 pesos.</li>
-                        <li class="list-group-item">- Demanda de relación directa y regular: $600.000 pesos.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-    </div>
-
+    </div> --}}
 
     <!-- Seccion Contacto -->
-    <div class="container scroll-content fadeTop mb-5">
-        <section id="seccion_contacto">
+    <section id="seccion_contacto">
+        <div class="container scroll-content fadeTop mb-5">
+
             <div class="row section_six text-center">
                 {{-- INICIO FORMULARIO --}}
                 <div class="container">
@@ -407,8 +475,9 @@
                 </div>
                 {{-- FIN FORMULARIO --}}
             </div>
-        </section>
-    </div>
+
+        </div>
+    </section>
 </body>
 
 <footer class="bg-dark pt-4">
