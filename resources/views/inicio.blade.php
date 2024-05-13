@@ -8,13 +8,13 @@
     <title>Mediación Familiar Privada</title>
 
     <!-- Links -->
-    <link rel="stylesheet" href="{{ asset('/build/assets/app-927a87df.css') }}" />
-    <link rel="stylesheet" href="{{ asset('/build/assets/app-bd4f8341.css') }}" />
+    <link rel="stylesheet" href="{{ asset('/build/assets/app-60715706.css') }}" />
+    <link rel="stylesheet" href="{{ asset('/build/assets/app-9e7cf659.css') }}" />
 
     <!-- Scripts -->
-    <script type="module" src="{!! asset('/build/assets/app-eec74061.js') !!}" async></script>
-    <script type="module" src="{!! asset('/build/assets/_commonjsHelpers-23102255.js') !!}" async></script>
-    <script type="module" src="{!! asset('/build/assets/bootstrap-0d7e4f50.js') !!}" async></script>
+    <script type="module" src="{!! asset('/build/assets/app-05c77929.js') !!}" async></script>
+    <script type="module" src="{!! asset('/build/assets/bootstrap-cd17eadc.js') !!}" async></script>
+    {{-- <script type="module" src="{!! asset('/build/assets/_commonjsHelpers-23102255.js') !!}" async></script> --}}
 
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -47,39 +47,33 @@
     </script>
 
     <!-- Vite -->
-    @vite(['resources/css/app.css',
-    'resources/js/app.js',
-    'resources/js/bootstrap.js'])
+    @vite([ 'resources/css/app.scss',
+            'resources/js/app.js',
+            'resources/js/bootstrap.js'])
 </head>
 
 <body>
 
-    <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <div class="p-3 p-auto">
-                    <a class="navbar-brand link-body-emphasi" href="#seccion_inicio">
-                        <img src="{{ asset('images/logo_v3.png') }}" class="logo">
-                        <span>Abogado Mediador</span>
-                    </a>
-                </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
-                    <ul class="navbar-nav navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a href="#seccion_inicio" class="nav-link" aria-current="page">Inicio</a>
-                        </li>
-                        <li class="nav-item"><a href="#servicio_abogado" class="nav-link">Servicios Abogado</a></li>
-                        <li class="nav-item"><a href="#servicio_mediacion" class="nav-link">Servicios Mediación</a></li>
-                        <li class="nav-item"><a href="#seccion_contacto" class="nav-link">Contacto</a></li>
-                    </ul>
+    <nav class="navbar navbar-expand-md navbar-light fixed-top">
+        <div class="container">
+            <a href="#seccion_inicio" class="navbar-brand">
+                <img src="{{ asset('images/logo_v3(sf1).png') }}">
+                <span>Abogado Mediador</span>
+            </a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navAbogado"
+                aria-controls="navAbogado" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navAbogado">
+                <div class="nav ms-auto flex-column flex-md-row text-end">
+                    <a href="#seccion_inicio" class="nav-link active">Inicio</a>
+                    <a href="#servicio_abogado" class="nav-link">Servicios Abogado</a>
+                    <a href="#servicio_mediacion" class="nav-link">Servicios Mediación</a>
+                    <a href="#seccion_contacto" class="nav-link">Contacto</a>
                 </div>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
     <!-- Seccion Inicio -->
     <div class="container-fluid">
@@ -116,7 +110,7 @@
     </div>
 
     <!-- Seccion Servicios Abogado -->
-    <section id="servicio_abogado">
+    <section class="serv_abg" id="servicio_abogado">
         <div class="container section_four scroll-content fadeTop mb-5">
             <div class="row justify-content-center align-items-center text-center mb-3">
                 <h2>Servicios Abogado</h2>
@@ -136,25 +130,23 @@
             <div class="row text-start">
                 <div class="multi-collapse collapse" id="collapseServicios" style="">
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">- Autorización para salir del país: $350.000 pesos.</li>
-                        <li class="list-group-item">- Demanda de divorcio de común acuerdo: $400.000 pesos.</li>
-                        <li class="list-group-item">- Demanda de declaración de bien familiar: $500.000 pesos.</li>
-                        <li class="list-group-item">- Demanda de violencia intrafamiliar: $500.000 pesos.</li>
-                        <li class="list-group-item">- Demanda de divorcio unilateral: $550.000 pesos.</li>
-                        <li class="list-group-item">- Demanda de pensión de alimentos: $600.000 pesos.</li>
-                        <li class="list-group-item">- Demanda de cese de pensión de alimentos: $600.000 pesos.</li>
-                        <li class="list-group-item">- Demanda de aumento de pensión de alimentos: $600.000 pesos.</li>
-                        <li class="list-group-item">- Demanda de relación directa y regular: $600.000 pesos.</li>
-                        <li class="list-group-item">- Pago de deudas de pensión de alimentos con los fondos de AFP: 20%
-                            total de la deuda.</li>
-                        <li class="list-group-item">- Posesión efectiva intestada o sin testamento: $250.000.</li>
-                        <li class="list-group-item">- Inscripción de propiedades en el Conservador de Bienes Raíces:
-                            $200.000.</li>
-                        <li class="list-group-item">- Estudio de títulos: $300.000.</li>
+                        <li class="list-group-item">- Autorización para salir del país.</li>
+                        <li class="list-group-item">- Demanda de divorcio de común acuerdo.</li>
+                        <li class="list-group-item">- Demanda de declaración de bien familiar.</li>
+                        <li class="list-group-item">- Demanda de violencia intrafamiliar.</li>
+                        <li class="list-group-item">- Demanda de divorcio unilateral.</li>
+                        <li class="list-group-item">- Demanda de pensión de alimentos.</li>
+                        <li class="list-group-item">- Demanda de cese de pensión de alimentos.</li>
+                        <li class="list-group-item">- Demanda de aumento de pensión de alimentos.</li>
+                        <li class="list-group-item">- Demanda de relación directa y regular.</li>
+                        <li class="list-group-item">- Pago de deudas de pensión de alimentos con los fondos de AFP.</li>
+                        <li class="list-group-item">- Posesión efectiva intestada o sin testamento.</li>
+                        <li class="list-group-item">- Inscripción de propiedades en el Conservador de Bienes Raíces.</li>
+                        <li class="list-group-item">- Estudio de títulos.</li>
                         <li class="list-group-item">- Servicio de corretaje de propiedades respecto a la gestión de
                             arriendos y compraventas de inmuebles.</li>
                         <li class="list-group-item">- Confección de contratos de arriendo, compraventa, promesa de
-                            compraventa: $100.000.</li>
+                            compraventa.</li>
                         <li class="list-group-item">- Demanda por despido injustificado en derecho laboral: Pago
                             conforme a lo ganado en juicio.</li>
                     </ul>
@@ -197,7 +189,7 @@
     </section>
 
     <!-- Seccion Servicio Mediación -->
-    <section id="servicio_mediacion">
+    <section class="serv_med" id="servicio_mediacion">
         <div class="container section_two scroll-content fadeTop mb-5">
 
             <div class="row justify-content-center align-items-center text-center">
@@ -307,9 +299,13 @@
                 <h2 class="p-4">Valores año 2024</h2>
                 <div class="row justify-content-center align-items-md-center text-center">
                     <div class="card border-light col-md-10">
-                        <div class="card-header border">
+                        <div class="card-header border p-3 m-3">
                             <h3>Mediación con o sin acuerdo en la sesión familiar</h3>
                             <h2>$100.000</h2>
+                        </div>
+                        <div class="card-header border p-3 m-3">
+                            <h3>Acta de mediación frustrada</h3>
+                            <h2>$30.000</h2>
                         </div>
                         <div class="card-body">
                             <div class="card-text">
@@ -358,65 +354,8 @@
         </div>
     </section>
 
-    {{-- <!-- Seccion Valores -->
-    <div class="container section_five scroll-content fadeTop mb-5">
-        <section id="seccion_valores">
-            <div class="row justify-content-center align-items-center text-center">
-                <h2>Valores año 2023</h2>
-                <div class="row justify-content-center align-items-md-center text-center">
-                    <div class="card border-light col-md-10">
-                        <div class="card-header border">
-                            <h3>Mediación con o sin acuerdo en la sesión familiar</h3>
-                            <h2>$100.000</h2>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-text">
-                                <h5>Incluyen las tres materias mediables: Pensión de alimentos, Relación Directa y
-                                    Regular y Cuidado Personal de los niños, niñas o adolescentes.</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center text-center">
-                    <h2>Territorio Jurisdiccional</h2>
-                    <div class="col-md-4 p-3">
-                        <h5>El Bosque / La Cisterna / La Granja / La Pintana / Lo Espejo / Pedro Aguirre Cerda / San
-                            Joaquín / San Miguel / San Ramón</h5>
-                    </div>
-                    <div class="col-md-4 p-3">
-                        <h5>Santiago / Cerrillos / Conchalí / Estación Central / Huechuraba / Independencia / La Florida
-                            / La Reina / Las Condes / Lo Barnechea / Macul / Ñuñoa / Peñalolen / Providencia / Quilicura
-                            / Recoleta / Renca / Vitacura</h5>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <a class="collapsed" data-bs-toggle="collapse" href="#collapseImportante" role="button"
-                            aria-expanded="false" aria-controls="collapseImportante">
-                            <i class="fa-solid fa-circle-exclamation fa-5x p-1 custom-icon-arrow"></i>
-                        </a>
-                        <h4>IMPORTANTE</h4>
-                    </div>
-                    <div class="multi-collapse collapse" id="collapseImportante" style="">
-                        <p>“No se agendarán horas sin previo abono de la sesión base”<br>
-                            “No se arriesgue y llegue a un buen acuerdo, para no tener problemas judiciales a
-                            futuro”</p>
-                        <p>*Algunos mediadores familiares que se encuentran en el mercado, "NO SON ABOGADOS”. En nuestro
-                            centro de mediación familiar privado, el servicio será realizado por
-                            un abogado mediador, quien se encuentra en pleno conocimiento de las reformas y leyes
-                            vigentes en materia de Familia</p>
-                        <p>*Antes de agendar hora con el abogado mediador, deben ser abonados los $70.000 pesos que
-                            corresponden a la sesión base (sesión sin acuerdo), si durante la sesión se llega a un
-                            acuerdo, se deberá abonar los $30.000 pesos faltantes y posteriormente, se redactará el acta
-                            de mediación y se enviará al tribunal competente</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div> --}}
-
     <!-- Seccion Contacto -->
-    <section id="seccion_contacto">
+    <section class="cont" id="seccion_contacto">
         <div class="container scroll-content fadeTop mb-5">
 
             <div class="row section_six text-center">
@@ -475,7 +414,6 @@
                 </div>
                 {{-- FIN FORMULARIO --}}
             </div>
-
         </div>
     </section>
 </body>
@@ -497,7 +435,7 @@
                     <li><i class="fas fa-map-marker-alt"></i> Avenida Argentina 9052, La Cisterna</li>
                     <li><i class="fa-solid fa-mobile-screen-button"></i> Teléfono celular: +56 9 30512849</li>
                     <li><i class="fas fa-phone"></i> Teléfono fijo: +56 2 33455422</li>
-                    <li><i class="fas fa-envelope"></i> Correo electrónico: mediacionayb@gmail.com</li>
+                    <li><i class="fas fa-envelope"></i> Correo electrónico: abogadombm@gmail.com</li>
                     <li><i class="fas fa-scale-balanced"></i> Número de registro de mediador familiar: 7009</li>
                 </ul>
             </div>

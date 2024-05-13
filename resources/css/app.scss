@@ -1,3 +1,5 @@
+@import 'bootstrap/scss/bootstrap';
+
 * {
     margin: 0;
     padding: 0;
@@ -24,19 +26,40 @@
     /* Agrega una transición suave */
 }
 
-/* Ajusta el scroll-margin-top para las secciones */
-section {
-    scroll-margin-top: 200px; /* Ajusta este valor según sea necesario */
+.serv_abg {
+    scroll-margin-top: 300px;
 }
 
+.serv_med {
+    scroll-margin-top: 180px;
+}
 
-/* LOGOTIPO */
-.logo {
+.cont {
+    scroll-margin-top: 170px;
+}
+
+/* nav */
+
+.navbar {
+    background-color: #fff;
+}
+
+.navbar-brand>img {
     width: 10rem;
-    height: auto;
 }
 
-/* FIN LOGOTIPO */
+.navbar-brand>span {
+    color: #4144ad;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+.nav>a {
+    color: #495057;
+    font-weight: bold;
+}
+
+/* FIN nav */
 
 /* HEADER */
 
@@ -54,12 +77,6 @@ header {
 header.abajo {
     background: #fff;
     padding: 15px 20px;
-}
-
-header span {
-    color: #4144ad;
-    font-size: 1.5rem;
-    font-weight: bold;
 }
 
 header ul li {
@@ -192,42 +209,6 @@ header ul li {
 
 /* FIN SECCION SERVICIOS */
 
-/* SECCION VALORES */
-.section_five {
-    position: relative;
-    color: #000000;
-    font-weight: bold;
-    height: auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    border: 1px solid #ddd;
-    background-color: white;
-    padding: 20px;
-}
-
-.section_five h3 {
-    padding: 20px 0;
-}
-
-.section_five h4 {
-    text-align: center;
-    padding: 15px;
-    font-weight: bold;
-}
-
-.section_five h5 {
-    text-align: justify;
-    padding: 5px;
-    font-weight: bold;
-}
-
-.section_five p {
-    text-align: center;
-    padding: 5px;
-    font-size: 18px;
-}
-
-/* FIN SECCION VALORES */
-
 /* SECCION CONTACTO */
 .section_six {
     position: relative;
@@ -320,44 +301,24 @@ footer a {
 /*FIN DE FOOTER */
 
 /* RESPONSIVE */
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
 
-    header nav a {
-        margin: 0 3rem;
+    .navbar-brand>img {
+        width: 6rem;
     }
 
-    header nav a img {
-        position: relative;
-        max-width: 8rem;
-        margin: 0px;
+    .container-fluid .section_inicio {
+        width: auto;
+        /* ajusta el ancho según tus necesidades */
+        height: 240px;
+        /* ajusta la altura según tus necesidades */
     }
 
-    header nav a span {
-        font-size: 1rem;
-    }
-
-    header nav button span {
-        margin: 0 15rem;
-    }
-
-    .logo {
-        margin-top: 1rem;
-    }
-
-    .container-fluid .section_inicio{
-        width: auto;/* ajusta el ancho según tus necesidades */
-        height: 240px;/* ajusta la altura según tus necesidades */
-    }
-
-    .container-fluid .section_inicio .transparencia-inicio{
-        width: auto;/* ajusta el ancho según tus necesidades */
-        height: 300px;/* ajusta la altura según tus necesidades */
-    }
-
-    .section_inicio{
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: 10% 34%;
+    .container-fluid .section_inicio .transparencia-inicio {
+        width: auto;
+        /* ajusta el ancho según tus necesidades */
+        height: 300px;
+        /* ajusta la altura según tus necesidades */
     }
 
     .cabecera {
@@ -372,27 +333,153 @@ footer a {
         font-size: 25px;
     }
 
-    .what{
+    .what {
         max-width: auto;
         max-height: 10px;
     }
 
-    .what h5{
+    .what h5 {
         font-size: 20px;
     }
 
-    .what-ico a i{
+    .what-ico a i {
         padding-top: 15px;
         font-size: 50px;
-    }
-
-    .section_two {
-        text-align: center;
     }
 
     footer iframe {
         width: 80%;
     }
+
+    // .container {
+    //     max-width: 1200px;
+    //     margin: 0 auto;
+    //     padding: 0 15px;
+    // }
+
+    // .navbar {
+    //     display: flex;
+    //     justify-content: space-between;
+    //     align-items: center;
+    // }
+
+
+
+    // .navbar-collapse {
+    //     background-color: #f8f9fa;
+    //     /* Cambiar color de fondo cuando se despliega el menú */
+    // }
+
+    // .navbar-logo {
+    //     color: #fff;
+    //     text-decoration: none;
+    //     font-weight: bold;
+    //     font-size: 1.2rem;
+    //     margin-right: 20px;
+    // }
+
+    // .navbar-toggler {
+    //     display: none;
+    //     background: none;
+    //     border: none;
+    //     cursor: pointer;
+    // }
+
+    // .navbar-toggler-icon {
+    //     width: 20px;
+    //     height: 20px;
+    //     background: #fff;
+    //     display: block;
+    // }
+
+    // .navbar-toggler-icon:before {
+    //     content: '';
+    //     width: 100%;
+    //     height: 2px;
+    //     background: #fff;
+    //     display: block;
+    //     margin-top: 4px;
+    // }
+
+    // .navbar-collapse {
+    //     display: flex;
+    // }
+
+    // .navbar-nav {
+    //     list-style-type: none;
+    //     margin: 0;
+    //     padding: 0;
+    //     display: flex;
+    // }
+
+    // .nav-item {
+    //     margin-left: 20px;
+    // }
+
+    // .nav-link {
+    //     color: #fff;
+    //     text-decoration: none;
+    //     font-weight: bold;
+    // }
+
+    // .navbar-toggler {
+    //     display: block;
+    //     padding: 2px;
+    // }
+
+    // .navbar-collapse {
+    //     display: none;
+    //     flex-direction: column;
+    //     position: absolute;
+    //     top: 60px;
+    //     left: 0;
+    //     background-color: #333;
+    //     width: 100%;
+    // }
+
+    // .navbar-nav {
+    //     flex-direction: column;
+    // }
+
+    // .nav-item {
+    //     margin: 0;
+    // }
+
+    // .nav-link {
+    //     padding: 10px 20px;
+    //     border-bottom: 1px solid #555;
+    // }
+
+    // header nav a img {
+    //     position: relative;
+    //     max-width: 6rem;
+    // }
+
+    // header nav a span {
+    //     font-size: 20px;
+    //     margin-top: 20px;
+    //     margin-left: 30px;
+    // }
+
+    // header nav button {
+    //     margin-left: 50px;
+    // }
+
+    // header nav button span {
+    //     margin: 0 100px;
+    // }
+
+    // .header {
+    //     background-color: #333;
+    //     color: #fff;
+    //     padding: 10px 0;
+    // }
+
+    // .logo {
+    //     margin-top: 1rem;
+    // }
+
+
 
 }
 

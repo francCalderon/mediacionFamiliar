@@ -1,7 +1,6 @@
-// resources/js/app.js
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.min.js';
-
+// import '.bootstrap';
+// import '..sass/app.scss';
+import *as bootstrap from 'bootstrap';
 
 import '@fortawesome/fontawesome-free/scss/fontawesome.scss';
 import '@fortawesome/fontawesome-free/scss/brands.scss';
@@ -30,5 +29,7 @@ window.addEventListener('scroll', function () {
         }
     }
 });
+
+
 
 
