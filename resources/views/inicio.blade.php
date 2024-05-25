@@ -9,7 +9,7 @@
 
     <!-- Links -->
     <link rel="stylesheet" href="{{ asset('/build/assets/app-60715706.css') }}" />
-    <link rel="stylesheet" href="{{ asset('/build/assets/app-9e7cf659.css') }}" />
+    <link rel="stylesheet" href="{{ asset('/build/assets/app-64a85025.css') }}" />
 
     <!-- Scripts -->
     <script type="module" src="{!! asset('/build/assets/app-05c77929.js') !!}" async></script>
@@ -20,8 +20,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
     <!-- Icono -->
-    <link rel="icon" href="{{ asset('images/a&b.ico') }}" type="image/x-icon">
-    <link rel="shortcut icon" href="{{ asset('images/a&b.ico') }}" type="image/x-icon">
+    <link rel="icon" href="{{ asset('images/logo_v3.ico') }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('images/logo_v3.ico') }}" type="image/x-icon">
 
     <!-- Init Google Recaptcha -->
     <script src="https://www.google.com/recaptcha/api.js?render=6Lf7jQQpAAAAADsX_QPKIe4c82-JEXnqQ5ukaFe-"></script>
@@ -48,8 +48,8 @@
 
     <!-- Vite -->
     @vite([ 'resources/css/app.scss',
-            'resources/js/app.js',
-            'resources/js/bootstrap.js'])
+    'resources/js/app.js',
+    'resources/js/bootstrap.js'])
 </head>
 
 <body>
@@ -79,14 +79,12 @@
     <div class="container-fluid">
         <div class="section_inicio">
             <div class="transparencia-inicio">
-                <section id="seccion_inicio">
-                    <div class="row justify-content-center align-items-center text-center">
-                        <div class="col-md-12 cabecera">
-                            <h1>"ABOGADO MEDIADOR"</h1>
-                            <p>Miguel Andrés Arriagada Cuadro</p>
-                        </div>
+                <div class="row justify-content-center align-items-center text-center">
+                    <div class="col-md-12 cabecera">
+                        <h1>"ABOGADO MEDIADOR"</h1>
+                        <p>Miguel Andrés Arriagada Cuadro</p>
                     </div>
-                </section>
+                </div>
             </div>
         </div>
     </div>
@@ -94,7 +92,7 @@
     <!-- Contacto whatsapp -->
     <div class="container">
         <section>
-            <div class="row justify-content-center align-items-center text-center whapp_inter scroll-content fadeTop">
+            <div class="row justify-content-center align-items-center text-center whapp_inter scroll-content">
                 <div class="col-md-6 what">
                     <h5>Contáctanos vía Whatsapp</h5>
                 </div>
@@ -111,14 +109,14 @@
 
     <!-- Seccion Servicios Abogado -->
     <section class="serv_abg" id="servicio_abogado">
-        <div class="container section_four scroll-content fadeTop mb-5">
+        <div class="container seccion scroll-content fadeTop mb-5">
             <div class="row justify-content-center align-items-center text-center mb-3">
                 <h2>Servicios Abogado</h2>
             </div>
             {{-- 1 --}}
             <div class="row justify-content-start align-items-center">
                 <div class="col-md-8 text-start">
-                    <h5 class="m-0">Incluye todos los siguientes servicios con sus valores:</h5>
+                    <h5>Incluye todos los siguientes servicios con sus valores:</h5>
                 </div>
                 <div class="col-md-2 text-start">
                     <a class="collapsed" data-bs-toggle="collapse" href="#collapseServicios" role="button"
@@ -141,7 +139,8 @@
                         <li class="list-group-item">- Demanda de relación directa y regular.</li>
                         <li class="list-group-item">- Pago de deudas de pensión de alimentos con los fondos de AFP.</li>
                         <li class="list-group-item">- Posesión efectiva intestada o sin testamento.</li>
-                        <li class="list-group-item">- Inscripción de propiedades en el Conservador de Bienes Raíces.</li>
+                        <li class="list-group-item">- Inscripción de propiedades en el Conservador de Bienes Raíces.
+                        </li>
                         <li class="list-group-item">- Estudio de títulos.</li>
                         <li class="list-group-item">- Servicio de corretaje de propiedades respecto a la gestión de
                             arriendos y compraventas de inmuebles.</li>
@@ -155,8 +154,7 @@
             {{-- 2 --}}
             <div class="row justify-content-start align-items-center">
                 <div class="col-md-8 text-start">
-                    <h5 class="m-0">Orientaciones jurídicas $ 30.000 pesos por una hora, sobre las siguientes
-                        materias: </h5>
+                    <h5>Orientaciones jurídicas $ 30.000 pesos por una hora, sobre las siguientes materias:</h5>
                 </div>
                 <div class="col-md-2 text-start">
                     <a class="collapsed" data-bs-toggle="collapse" href="#collapseOrientaciones" role="button"
@@ -184,35 +182,37 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
-    <!-- Seccion Servicio Mediación -->
+    <!-- Seccion Servicios Mediación -->
     <section class="serv_med" id="servicio_mediacion">
-        <div class="container section_two scroll-content fadeTop mb-5">
-
+        <div class="container seccion scroll-content fadeTop mb-5">
+            <div class="row justify-content-center align-items-center text-center mb-3">
+                <h2>Servicios de Mediación</h2>
+            </div>
+            {{-- materias de mediacion --}}
+            <div class="row justify-content-start align-items-center">
+                <div class="col-md-8 text-start">
+                    <h5>Materias que son objeto de una Mediación Familiar</h5>
+                </div>
+                <div class="col-md-2 text-start">
+                    <a class="collapsed" data-bs-toggle="collapse" href="#collapseMaterias" role="button"
+                        aria-expanded="false" aria-controls="collapseServicios">
+                        <i class="fa-solid fa-chevron-down fa-2x custom-icon"></i>
+                    </a>
+                </div>
+            </div>
             <div class="row justify-content-center align-items-center text-center">
-                <h2>Materias que son objeto de una Mediación Familiar</h2>
-                <div class="row justify-content-center align-items-center py-5">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <h5>Pensión de Alimentos</h5>
-                        </div>
-                        <div class="col-md-4">
-                            <h5>Relación Directa y Regular con los hijos, hijas o adolescentes</h5>
-                        </div>
-                        <div class="col-md-4">
-                            <h5>Cuidado Personal Compartido de los hijos, hijas o adolescentes</h5>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <a class="" data-bs-toggle="collapse" href="#collapseAlimentos" role="button"
-                                aria-expanded="false" aria-controls="collapseAlimentos">
-                                <i class="fa-solid fa-scale-balanced fa-3x custom-icon"></i>
-                            </a>
-                            <div class="row">
+                <div class="multi-collapse collapse" id="collapseMaterias">
+                    <div class="row py-5">
+                        <div class="col-md-4 pb-4">
+                            <h5>Pensión de Alimentos<br><br></h5>
+                            <div class="col">
+                                <a data-bs-toggle="collapse" href="#collapseAlimentos" role="button"
+                                    aria-expanded="false" aria-controls="collapseAlimentos">
+                                    <i class="fa-solid fa-scale-balanced fa-3x custom-icon"></i>
+                                </a>
                                 <div class="col-md-12">
                                     <div class="multi-collapse collapse" id="collapseAlimentos" style="">
                                         <h5>¿De qué se trata?</h5>
@@ -225,132 +225,173 @@
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <a class="collapsed" data-bs-toggle="collapse" href="#collapseRelacion" role="button"
-                                aria-expanded="false" aria-controls="collapseRelacion">
-                                <i class="fa-solid fa-scale-balanced fa-3x custom-icon"></i>
-                            </a>
-                            <div class="col-md-12">
-                                <div class="multi-collapse collapse" id="collapseRelacion" style="">
-                                    <h5>¿De qué se trata?</h5>
-                                    <p>“Aquella que propende a que el vínculo familiar entre el padre o madre que no
-                                        ejerce el cuidado personal y su hijo se mantenga a través de un contacto
-                                        periódico y estable”</p>
+                            <h5>Relación Directa y Regular con los hijos, hijas o adolescentes</h5>
+                            <div class="col">
+                                <a data-bs-toggle="collapse" href="#collapseRelacion" role="button"
+                                    aria-expanded="false" aria-controls="collapseRelacion">
+                                    <i class="fa-solid fa-scale-balanced fa-3x custom-icon"></i>
+                                </a>
+                                <div class="col-md-12">
+                                    <div class="multi-collapse collapse" id="collapseRelacion" style="">
+                                        <h5>¿De qué se trata?</h5>
+                                        <p>“Aquella que propende a que el vínculo familiar entre el padre o madre que no
+                                            ejerce el cuidado personal y su hijo se mantenga a través de un contacto
+                                            periódico y estable”</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <a class="collapsed" data-bs-toggle="collapse" href="#collapseCuidado" role="button"
-                                aria-expanded="false" aria-controls="collapseCuidado">
-                                <i class="fa-solid fa-scale-balanced fa-3x custom-icon"></i>
-                            </a>
-                            <div class="col-md-12">
-                                <div class="multi-collapse collapse" id="collapseCuidado" style="">
-                                    <h5>¿De qué se trata?</h5>
-                                    <p>“Es un régimen de vida que procura estimular la corresponsabilidad de ambos
-                                        padres que viven separados, en la crianza y educación de los hijos comunes,
-                                        mediante un sistema de residencia que asegure su adecuada estabilidad y
-                                        continuidad”</p>
+                            <h5>Cuidado Personal Compartido de los hijos, hijas o adolescentes</h5>
+                            <div class="col">
+                                <a data-bs-toggle="collapse" href="#collapseCuidado" role="button"
+                                    aria-expanded="false" aria-controls="collapseCuidado">
+                                    <i class="fa-solid fa-scale-balanced fa-3x custom-icon"></i>
+                                </a>
+                                <div class="col-md-12">
+                                    <div class="multi-collapse collapse" id="collapseCuidado" style="">
+                                        <h5>¿De qué se trata?</h5>
+                                        <p>“Es un régimen de vida que procura estimular la corresponsabilidad de ambos
+                                            padres que viven separados, en la crianza y educación de los hijos comunes,
+                                            mediante un sistema de residencia que asegure su adecuada estabilidad y
+                                            continuidad”</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row text-start py-5">
+                        <div class="col-md-12">
+                            <h2>¿Qué se entiende por mediación familiar?</h2>
+                            <p>La mediación familiar es un sistema de resolución de conflictos a que llegan las
+                                partes, ayudadas por
+                                un tercero imparcial llamado mediador familiar. El mediador los ayuda a obtener una
+                                solución que
+                                surja de ellos mismos, a través de sesiones realizadas fuera del tribunal, en un que
+                                favorece el entendimiento.</p>
+                        </div>
+                        <div class="col-md-12">
+                            <h2>¿Qué beneficios otorga una mediación familiar?</h2>
+                            <p><u>Ahorro de dinero:</u> El costo de la mediación familiar es inferior en comparación
+                                al pago de los honorarios que se deben realizar al abogado patrocinante y evitándose
+                                los costos de
+                                un juicio.
+                                <br><br><u>Permite ahorrar tiempo:</u> Debido a que una audiencia de mediación dura
+                                menos que un
+                                proceso
+                                judicial ante los Tribunales de Familia. Los Acuerdos llegados en la Mediación
+                                Familiar, son aprobados por el tribunal de familia, que tienen el mismo valor que
+                                una sentencia
+                                judicial firme o ejecutoriada.<br><br><u>Llegar a un acuerdo es voluntario:</u> Si
+                                las partes no
+                                llegan a acuerdo, se retoma el curso normal de un juicio. Promueve la igualdad de
+                                condiciones entre las partes.
+                                Es confidencial.</p>
+                        </div>
+                        <div class="col-md-12">
+                            <h2>¿En qué casos la mediación familiar es obligatoria?</h2>
+                            <p>Pension de alimentos.<br>Relación directa y regular con los hijos (régimen de
+                                visitas).<br>Cuidado
+                                personal de los hijos (antiguamente llamada “tuición”).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {{-- valores año 2024 --}}
+            <div class="row justify-content-start align-items-center">
+                <div class="col-md-8 text-start">
+                    <h5>Valores año 2024</h5>
+                </div>
+                <div class="col-md-2 text-start">
+                    <a class="collapsed" data-bs-toggle="collapse" href="#collapseValores" role="button"
+                        aria-expanded="false" aria-controls="collapseServicios">
+                        <i class="fa-solid fa-chevron-down fa-2x custom-icon"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="multi-collapse collapse" id="collapseValores">
+                    <div class="row justify-content-center align-items-center text-center py-5">
+                        <div class="card border-light col-md-10">
+                            <div class="card-header border p-2 m-2">
+                                <h3>Mediación con o sin acuerdo en la sesión familiar</h3>
+                                <h2>$100.000</h2>
+                            </div>
+                            <div class="card-header border p-2 m-2">
+                                <h3>Acta de mediación frustrada</h3>
+                                <h2>$30.000</h2>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <h5>Incluyen las tres materias mediables: Pensión de alimentos, Relación Directa y
+                                        Regular y Cuidado Personal de los niños, niñas o adolescentes.</h5>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-start">
-                <div class="col-md-12">
-                    <h2>¿Qué se entiende por mediación familiar?</h2>
-                    <p>La mediación familiar es un sistema de resolución de conflictos a que llegan las partes,
-                        ayudadas
-                        por
-                        un tercero imparcial llamado mediador familiar. El mediador los ayuda a obtener una solución
-                        que
-                        surja de ellos mismos, a través de sesiones realizadas fuera del tribunal, en un ambiente
-                        que
-                        favorece el entendimiento.</p>
+
+            {{-- territorio jurisdiccional --}}
+            <div class="row justify-content-start align-items-center">
+                <div class="col-md-8 text-start">
+                    <h5>Territorio Jurisdiccional</h5>
                 </div>
-                <div class="col-md-12">
-                    <h2>¿Qué beneficios otorga una mediación familiar?</h2>
-                    <p><u>Ahorro de dinero:</u> El costo de la mediación familiar es inferior en comparación al pago de
-                        los
-                        honorarios que se deben realizar al abogado patrocinante y evitándose los costos de un
-                        juicio.
-                        <br><br><u>Permite ahorrar tiempo:</u> Debido a que una audiencia de mediación dura menos que un
-                        proceso
-                        judicial ante los Tribunales de Familia. Los Acuerdos llegados en la Mediación Familiar, son
-                        aprobados por el tribunal de familia, que tienen el mismo valor que una sentencia judicial
-                        firme
-                        o ejecutoriada.<br><br><u>Llegar a un acuerdo es voluntario:</u> Si las partes no llegan a
-                        acuerdo,
-                        se
-                        retoma
-                        el curso normal de un juicio. Promueve la igualdad de condiciones entre las partes. Es
-                        confidencial.</p>
-                </div>
-                <div class="col-md-12">
-                    <h2>¿En qué casos la mediación familiar es obligatoria?</h2>
-                    <p>Pension de alimentos.<br>Relación directa y regular con los hijos (régimen de
-                        visitas).<br>Cuidado
-                        personal de los hijos (antiguamente llamada “tuición”).</p>
+                <div class="col-md-2 text-start">
+                    <a class="collapsed" data-bs-toggle="collapse" href="#collapseTerritorio" role="button"
+                        aria-expanded="false" aria-controls="collapseServicios">
+                        <i class="fa-solid fa-chevron-down fa-2x custom-icon"></i>
+                    </a>
                 </div>
             </div>
-
-            <!-- Valores -->
             <div class="row justify-content-center align-items-center text-center">
-                <h2 class="p-4">Valores año 2024</h2>
-                <div class="row justify-content-center align-items-md-center text-center">
-                    <div class="card border-light col-md-10">
-                        <div class="card-header border p-3 m-3">
-                            <h3>Mediación con o sin acuerdo en la sesión familiar</h3>
-                            <h2>$100.000</h2>
+                <div class="multi-collapse collapse" id="collapseTerritorio">
+                    <div class="row justify-content-center text-center py-4">
+                        <div class="col-md-4 p-3">
+                            <h5>El Bosque / La Cisterna / La Granja / La Pintana / Lo Espejo / Pedro Aguirre Cerda /
+                                San
+                                Joaquín / San Miguel / San Ramón</h5>
                         </div>
-                        <div class="card-header border p-3 m-3">
-                            <h3>Acta de mediación frustrada</h3>
-                            <h2>$30.000</h2>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-text">
-                                <h5>Incluyen las tres materias mediables: Pensión de alimentos, Relación Directa y
-                                    Regular y Cuidado Personal de los niños, niñas o adolescentes.</h5>
-                            </div>
+                        <div class="col-md-4 p-3">
+                            <h5>Santiago / Cerrillos / Conchalí / Estación Central / Huechuraba / Independencia / La
+                                Florida
+                                / La Reina / Las Condes / Lo Barnechea / Macul / Ñuñoa / Peñalolen / Providencia /
+                                Quilicura
+                                / Recoleta / Renca / Vitacura</h5>
                         </div>
                     </div>
-                </div>
-                <div class="row justify-content-center text-center">
-                    <h2>Territorio Jurisdiccional</h2>
-                    <div class="col-md-4 p-3">
-                        <h5>El Bosque / La Cisterna / La Granja / La Pintana / Lo Espejo / Pedro Aguirre Cerda / San
-                            Joaquín / San Miguel / San Ramón</h5>
-                    </div>
-                    <div class="col-md-4 p-3">
-                        <h5>Santiago / Cerrillos / Conchalí / Estación Central / Huechuraba / Independencia / La Florida
-                            / La Reina / Las Condes / Lo Barnechea / Macul / Ñuñoa / Peñalolen / Providencia / Quilicura
-                            / Recoleta / Renca / Vitacura</h5>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <a class="collapsed" data-bs-toggle="collapse" href="#collapseImportante" role="button"
-                            aria-expanded="false" aria-controls="collapseImportante">
-                            <i class="fa-solid fa-circle-exclamation fa-5x p-1 custom-icon-arrow"></i>
-                        </a>
-                        <h4>IMPORTANTE</h4>
-                    </div>
-                    <div class="multi-collapse collapse" id="collapseImportante" style="">
-                        <p>“No se agendarán horas sin previo abono de la sesión base”<br>
-                            “No se arriesgue y llegue a un buen acuerdo, para no tener problemas judiciales a
-                            futuro”</p>
-                        <p>*Algunos mediadores familiares que se encuentran en el mercado, "NO SON ABOGADOS”. En nuestro
-                            centro de mediación familiar privado, el servicio será realizado por
-                            un abogado mediador, quien se encuentra en pleno conocimiento de las reformas y leyes
-                            vigentes en materia de Familia</p>
-                        <p>*Antes de agendar hora con el abogado mediador, deben ser abonados los $70.000 pesos que
-                            corresponden a la sesión base (sesión sin acuerdo), si durante la sesión se llega a un
-                            acuerdo, se deberá abonar los $30.000 pesos faltantes y posteriormente, se redactará el acta
-                            de mediación y se enviará al tribunal competente</p>
+
+                    <div class="row py-2">
+                        <div class="col-md-12">
+                            <a class="collapsed" data-bs-toggle="collapse" href="#collapseImportante" role="button"
+                                aria-expanded="false" aria-controls="collapseImportante">
+                                <i class="fa-solid fa-circle-exclamation fa-5x p-1 custom-icon-arrow"></i>
+                            </a>
+                            <h4>IMPORTANTE</h4>
+                        </div>
+                        <div class="multi-collapse collapse" id="collapseImportante" style="">
+                            <p>“No se agendarán horas sin previo abono de la sesión base”<br>
+                                “No se arriesgue y llegue a un buen acuerdo, para no tener problemas judiciales a
+                                futuro”</p>
+                            <p>*Algunos mediadores familiares que se encuentran en el mercado, "NO SON ABOGADOS”. En
+                                nuestro
+                                centro de mediación familiar privado, el servicio será realizado por
+                                un abogado mediador, quien se encuentra en pleno conocimiento de las reformas y
+                                leyes
+                                vigentes en materia de Familia</p>
+                            <p>*Antes de agendar hora con el abogado mediador, deben ser abonados los $70.000 pesos
+                                que
+                                corresponden a la sesión base (sesión sin acuerdo), si durante la sesión se llega a
+                                un
+                                acuerdo, se deberá abonar los $30.000 pesos faltantes y posteriormente, se redactará
+                                el
+                                acta
+                                de mediación y se enviará al tribunal competente</p>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
@@ -358,7 +399,7 @@
     <section class="cont" id="seccion_contacto">
         <div class="container scroll-content fadeTop mb-5">
 
-            <div class="row section_six text-center">
+            <div class="row seccion section_six text-center">
                 {{-- INICIO FORMULARIO --}}
                 <div class="container">
                     <h2>Contáctanos vía correo electrónico</h2>

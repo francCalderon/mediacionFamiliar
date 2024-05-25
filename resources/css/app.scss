@@ -7,6 +7,14 @@
     font-family: sans-serif;
 }
 
+h5 {
+    font-weight: bold;
+}
+
+.seccion p{
+    text-align: justify;
+}
+
 .custom-icon-fan {
     color: white;
     padding: 10px;
@@ -61,29 +69,6 @@
 
 /* FIN nav */
 
-/* HEADER */
-
-header {
-    position: fixed;
-    width: 100%;
-    top: 0px;
-    left: 0px;
-    display: flex;
-    justify-content: space-evenly;
-    transition: 0.7s;
-    z-index: 1;
-}
-
-header.abajo {
-    background: #fff;
-    padding: 15px 20px;
-}
-
-header ul li {
-    font-size: 1.1rem;
-    font-weight: bold;
-}
-
 /*Inicio Estilos para la sección que se desvanecerá*/
 .fadeTop {
     opacity: 0;
@@ -97,7 +82,6 @@ header ul li {
 }
 
 /*Fin Estilos para la sección que se desvanecerá*/
-/* FIN HEADER */
 
 /* SECCION INICIO */
 
@@ -116,7 +100,7 @@ header ul li {
     height: 90vh;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     border: 1px solid #ddd;
-    margin-top: 11rem;
+    margin-top: 6rem;
     margin-bottom: 1.5rem;
 }
 
@@ -168,7 +152,7 @@ header ul li {
 /* FIN CONTACTO INTERMEDIO */
 
 /* SECCION MEDIACION */
-.section_two {
+.seccion {
     position: relative;
     color: #000000;
     font-weight: bold;
@@ -178,48 +162,9 @@ header ul li {
     background-color: white;
     padding: 20px;
 }
-
-.section_two h5 {
-    padding: 15px 0;
-    font-weight: bold;
-}
-
-.section_two p {
-    text-align: justify;
-}
-
-/* SECCION SERVICIOS */
-.section_four {
-    position: relative;
-    color: #000000;
-    height: auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    border: 1px solid #ddd;
-    padding: 20px;
-    background-color: white;
-}
-
-.section_four p {
-    text-align: justify;
-}
-
-.section_four i {
-    padding: 20px;
-}
-
-/* FIN SECCION SERVICIOS */
+/* FIN SECCION MEDIACION */
 
 /* SECCION CONTACTO */
-.section_six {
-    position: relative;
-    color: #000000;
-    font-weight: bold;
-    height: auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    border: 1px solid #ddd;
-    background-color: white;
-    padding: 20px;
-}
 
 .section_six form input {
     padding: 15px;
@@ -303,8 +248,21 @@ footer a {
 /* RESPONSIVE */
 @media only screen and (max-width: 767px) {
 
+    nav {
+        padding: auto;
+        margin-top: 0.5rem;
+    }
+
     .navbar-brand>img {
         width: 6rem;
+    }
+
+    .section_inicio{
+        background-size: contain 10;
+        background-attachment: scroll; /* Cambia a scroll para mejorar el rendimiento en móviles */
+        height: 10vh;
+        margin-top: 10rem; /* Ajusta los márgenes según sea necesario */
+        margin-bottom: 1rem;
     }
 
     .container-fluid .section_inicio {
@@ -350,136 +308,6 @@ footer a {
     footer iframe {
         width: 80%;
     }
-
-    // .container {
-    //     max-width: 1200px;
-    //     margin: 0 auto;
-    //     padding: 0 15px;
-    // }
-
-    // .navbar {
-    //     display: flex;
-    //     justify-content: space-between;
-    //     align-items: center;
-    // }
-
-
-
-    // .navbar-collapse {
-    //     background-color: #f8f9fa;
-    //     /* Cambiar color de fondo cuando se despliega el menú */
-    // }
-
-    // .navbar-logo {
-    //     color: #fff;
-    //     text-decoration: none;
-    //     font-weight: bold;
-    //     font-size: 1.2rem;
-    //     margin-right: 20px;
-    // }
-
-    // .navbar-toggler {
-    //     display: none;
-    //     background: none;
-    //     border: none;
-    //     cursor: pointer;
-    // }
-
-    // .navbar-toggler-icon {
-    //     width: 20px;
-    //     height: 20px;
-    //     background: #fff;
-    //     display: block;
-    // }
-
-    // .navbar-toggler-icon:before {
-    //     content: '';
-    //     width: 100%;
-    //     height: 2px;
-    //     background: #fff;
-    //     display: block;
-    //     margin-top: 4px;
-    // }
-
-    // .navbar-collapse {
-    //     display: flex;
-    // }
-
-    // .navbar-nav {
-    //     list-style-type: none;
-    //     margin: 0;
-    //     padding: 0;
-    //     display: flex;
-    // }
-
-    // .nav-item {
-    //     margin-left: 20px;
-    // }
-
-    // .nav-link {
-    //     color: #fff;
-    //     text-decoration: none;
-    //     font-weight: bold;
-    // }
-
-    // .navbar-toggler {
-    //     display: block;
-    //     padding: 2px;
-    // }
-
-    // .navbar-collapse {
-    //     display: none;
-    //     flex-direction: column;
-    //     position: absolute;
-    //     top: 60px;
-    //     left: 0;
-    //     background-color: #333;
-    //     width: 100%;
-    // }
-
-    // .navbar-nav {
-    //     flex-direction: column;
-    // }
-
-    // .nav-item {
-    //     margin: 0;
-    // }
-
-    // .nav-link {
-    //     padding: 10px 20px;
-    //     border-bottom: 1px solid #555;
-    // }
-
-    // header nav a img {
-    //     position: relative;
-    //     max-width: 6rem;
-    // }
-
-    // header nav a span {
-    //     font-size: 20px;
-    //     margin-top: 20px;
-    //     margin-left: 30px;
-    // }
-
-    // header nav button {
-    //     margin-left: 50px;
-    // }
-
-    // header nav button span {
-    //     margin: 0 100px;
-    // }
-
-    // .header {
-    //     background-color: #333;
-    //     color: #fff;
-    //     padding: 10px 0;
-    // }
-
-    // .logo {
-    //     margin-top: 1rem;
-    // }
-
-
 
 }
 
